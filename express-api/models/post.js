@@ -1,6 +1,6 @@
 const db = require('../db_config/config');
-const SQL = require('sql-template-strings');
-const { post } = require('../controllers/posts');
+const SQL = require('sql-template-strings'); // To remove (?)
+const { post } = require('../controllers/posts'); // To remove
 
 class Post {
     constructor(data) {
@@ -13,7 +13,7 @@ class Post {
     static get all(){
         return new Promise(async (res, rej) => {
             try {
-                let result = await db.run(SQL`SELECT * FROM posts`  );
+                let result = await db.run(SQL`SELECT * FROM posts`); //Do we need SQL(?)
                 let posts = result.rows.map(r => new Post(r))
                 res(posts)
             } catch (err) {
