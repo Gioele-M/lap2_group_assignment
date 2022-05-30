@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    image: 'node:12.18.4'
+    working_dir: /server
+    ports:
+      - 3000:3000
+  
+
+  ## add more
