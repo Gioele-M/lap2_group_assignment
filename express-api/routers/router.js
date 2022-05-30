@@ -8,4 +8,4 @@ router.get('/:id', postController.getById)
 router.post('/new', postController.post)
 
 
-
+module.exports = router
