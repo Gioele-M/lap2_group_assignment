@@ -13,7 +13,7 @@ class Post {
     static get all(){
         return new Promise(async (res, rej) => {
             try {
-                let result = await db.run(SQL`SELECT * FROM posts`); //Do we need SQL(?)
+                let result = await db.query(`SELECT * FROM posts`); //Do we need SQL(?)
                 let posts = result.rows.map(r => new Post(r))
                 res(posts)
             } catch (err) {
@@ -25,7 +25,7 @@ class Post {
     static findById(id){
         return new Promise (async (res, rej) => {
             try {
-                let postData = await db.run('SELECT * FROM posts WHERE id = $1;', [ id ]);
+                let postData = await db.query('SELECT * FROM posts WHERE id = $1;', [ id ]);
                 let post = new Post(postData.rows[0]);
                 res(post);
             } catch (err) {
@@ -37,7 +37,7 @@ class Post {
     static create(title,name,body){
         return new Promise (async (resolve, reject) => {
             try {
-                let postData = await db.run('INSERT INTO posts (title, name, body) VALUES ($1,$2,$3) RETURNING *;', [ title,name,body ]);
+                let postData = await db.query('INSERT INTO posts (title, name, body) VALUES ($1,$2,$3) RETURNING *;', [ title,name,body ]);
                 let post = new Post(postData.rows[0]);
                 resolve (post);
             } catch (err) {
