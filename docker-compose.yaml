@@ -5,12 +5,14 @@ services:
     working_dir: /code
     volumes:
       - type: bind
-        source: ./api
+        source: ./express-api
         target: /code
 
   db:
     image: postgres:12.4
-    environment: 
-      - POSTGRES_USER=futureproof
+    # environment: 
+    #   - POSTGRES_USER=futureproof
+    environment:
+      - POSTGRES_PASSWORD=password
     volumes:
       - "./db/migrations:/docker-entrypoint-initdb.d/:ro"

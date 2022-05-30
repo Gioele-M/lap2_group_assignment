@@ -12,7 +12,7 @@ services:
   #       target: /code
   #   command: [ "http-server" ]
   api:
-    container_name: debug_dev_api
+    container_name: assignment_api
     ports: 
       - 3000:3000
     # environment: 
@@ -27,7 +27,7 @@ services:
     command: bash -c "npm install && npm run seedDev && npm run dev"
 
   db:
-    container_name: debug_dev_db
+    container_name: assignment_db
     volumes:
       - "dbdata:/var/lib/postgresql/data"
     # environment: 
