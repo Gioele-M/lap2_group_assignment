@@ -1,6 +1,6 @@
 # LAP 2 - 24 Hour Challenge 
 
-Pair project done for [futureproof](https://www.getfutureproof.co.uk/) during week 6
+Pair project done for [futureproof](https://www.getfutureproof.co.uk/)
 
 Inspired by [Telegraph](https://telegra.ph/)
 
@@ -11,7 +11,7 @@ Inspired by [Telegraph](https://telegra.ph/)
  - run `bash _scripts/startDev.sh` to start api & db services
 
 
-  - To access server and client, visit `localhost:3000` and `localhost:8080`
+  - to access server and client, visit `localhost:3000` and `localhost:8080`
 
 
 
@@ -21,16 +21,16 @@ Inspired by [Telegraph](https://telegra.ph/)
 - [GitHub project](https://excalidraw.com/)
 
 ![image](assets/project_planning.png)
-![image](assets/githubP.png)
+
 ## Wins & Challenges
 
 ### Wins
 
-- Good planning  GItHub project
+- planning using GitHub project
 
 ### Challenges
 
-- ....
+- merge conflicts
 
 ## Contributors
 
