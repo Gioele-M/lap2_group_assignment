@@ -69,19 +69,29 @@ allData.then(e=>{
 function createPost(data){
     const {title, name, body} = data
 
+    console.log(title, name, body)
+
     const main_section = document.createElement('section')
-    main_section.className = 'd-none'
+    main_section.className = 'post2'
     
     const title_section = document.createElement('h5')
     title_section.textContent = title
+    title_section.className = 'postTitle'
+
     const name_section = document.createElement('h6')
     name_section.textContent = name
+    name_section.className = 'postName'
+
     const body_section = document.createElement('p')
     body_section.textContent = body
+    body_section.className = 'postBody'
+
 
     main_section.appendChild(title_section)
     main_section.appendChild(name_section)
     main_section.appendChild(body_section)
+
+    console.log(main_section)
 
     return main_section
 }

@@ -17,39 +17,36 @@
 
 
 
-function createPost(data){
-    const {title, name, body} = data
+// function createPost(data){
+//     const {title, name, body} = data
+
+//     const main_section = document.createElement('section')
+//     main_section.className = 'post2'
     
-    // const html_element = `<section class="d-none">
-    // <h5>${title}</h5>
-    // <h6>${name}</h6>
-    // <p>${body}</p>
-    // </section>`
+//     const title_section = document.createElement('h5')
+//     title_section.textContent = title
+//     title_section.className = 'postTitle'
+//     const name_section = document.createElement('h6')
+//     name_section.textContent = name
+//     title_section.className = 'postName'
+//     const body_section = document.createElement('p')
+//     body_section.textContent = body
+//     body_section.className = 'postBody'
 
-    const main_section = document.createElement('section')
-    main_section.className = 'd-none'
-    
-    const title_section = document.createElement('h5')
-    title_section.textContent = title
-    const name_section = document.createElement('h6')
-    name_section.textContent = name
-    const body_section = document.createElement('p')
-    body_section.textContent = body
+//     main_section.appendChild(title_section)
+//     main_section.appendChild(name_section)
+//     main_section.appendChild(body_section)
 
-    main_section.appendChild(title_section)
-    main_section.appendChild(name_section)
-    main_section.appendChild(body_section)
-
-    return main_section
-}
+//     return main_section
+// }
 
 
-function loopAndAppend(data, parent_div){
-    data.forEach(element => {
-        let html = createPost(element)
-        parent_div.appendChild(html)
-    });
-}
+// function loopAndAppend(data, parent_div){
+//     data.forEach(element => {
+//         let html = createPost(element)
+//         parent_div.appendChild(html)
+//     });
+// }
 
 
 

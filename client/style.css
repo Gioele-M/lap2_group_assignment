@@ -42,7 +42,7 @@ input[type=text], textarea {
 
 /* STYLING post */
 
-#post2 {
+.post2 {
     background-color: lightgray;
     width: 40%;
     margin: auto;
@@ -50,7 +50,7 @@ input[type=text], textarea {
     text-align: center;
   }
 
-  #postTitle {
+.postTitle {
     padding: 5px 10px;
     background-color: black;
     border-radius: 8px;
@@ -59,11 +59,11 @@ input[type=text], textarea {
     text-decoration-style: solid;
   }
   
-  #postName {
+  .postName {
     color: black
   }
   
-  #postBody {
+  .postBody {
     font-style: italic;
     color: black;
     padding-bottom: 10px;
