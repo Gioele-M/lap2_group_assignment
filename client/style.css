@@ -48,6 +48,7 @@ input[type=text], textarea {
     margin: auto;
     border-radius: 8px;
     text-align: center;
+    padding-bottom: 10px;
   }
 
 .postTitle {
@@ -60,12 +61,16 @@ input[type=text], textarea {
   }
   
   .postName {
-    color: black
+    color: black;
+    margin: auto;
   }
   
   .postBody {
     font-style: italic;
     color: black;
-    padding-bottom: 10px;
+    padding: 7px;
+    margin: 1em;
+    border-style: groove;
+    margin-bottom: 5px;
   }
   
