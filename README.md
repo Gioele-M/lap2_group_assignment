@@ -2,19 +2,23 @@
 
 
 
-# Getting Started
+# Installation & Usage
 
  - clone this repo and `cd` into folder `lap2_group_assignment`
 
-  - use `docker compose up` to get it running
+ - run `bash _scripts/startDev.sh` to start api & db services
 
-### Run using
-bash _scripts/startDev.sh 
+  - To start client, open `index.html` filr with your browser
+
+  - To access server, visit `localhost:3000`
 
 
 
-## Screenshot (to be added ...)
-![image](images/random.png)
+
+
+
+## Planning stage
+![image](assets/project_planning.png)
 
 ## Wins & Challenges
 
