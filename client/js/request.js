@@ -38,3 +38,17 @@ async function getPost(id) {
     console.warn(err);
   }
 }
+
+
+async function getAllPost() {
+    try {
+      const response = await fetch(`http://localhost:3000/`);
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+
+
+module.exports = {handlePost, getAllPost, getPost}
