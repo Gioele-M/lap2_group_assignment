@@ -51,7 +51,7 @@ async function getAllPost() {
     }
 }
 
-
+// Get the data and export create the sections to append to the html
 const parent = document.querySelector('#parent-div')
 const allData = getAllPost()
 
@@ -61,12 +61,9 @@ allData.then(e=>{
 
 
 
-// module.exports = {handlePost, getAllPost, getPost}
 
 
-
-//Meant to be in another file but whatevs
-
+//Meant to be in another file (?)
 
 function createPost(data){
     const {title, name, body} = data
