@@ -25,6 +25,7 @@ async function handlePost(e) {
     } else {
       window.location.hash = `${id}`;
     }
+    location.reload()
   } catch (err) {
     console.warn(err);
   }
