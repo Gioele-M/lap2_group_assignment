@@ -1,6 +1,6 @@
 # LAP 2 - 24 Hour Challenge 
 
-
+Inspired by [Telegraph](https://telegra.ph/)
 
 # Installation & Usage
 
