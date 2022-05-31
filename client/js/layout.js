@@ -1,6 +1,8 @@
 // Base layout / homepage
 const formArea = document.querySelector('#form-area');
+const submitBtn = document.querySelector('#submit-btn')
 const postArea = document.querySelector('#post')
+
 window.addEventListener('hashchange', updateContent);
 window.addEventListener('load', updateContent)
 
@@ -19,3 +21,5 @@ function updateContent() {
   let hash = window.location.hash.substring(1);
   updateView(hash);
 }
+
+
