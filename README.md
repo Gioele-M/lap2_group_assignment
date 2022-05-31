@@ -13,6 +13,9 @@ Inspired by [Telegraph](https://telegra.ph/)
 
   - to access server and client, visit `localhost:3000` and `localhost:8080`
 
+## Homepage
+
+![image](assets/homepage.png)
 
 
 ## Planning
@@ -22,9 +25,6 @@ Inspired by [Telegraph](https://telegra.ph/)
 
 ![image](assets/project_planning.png)
 
-## Homepage
-
-![image](assets/homepage.png)
 
 ## Wins & Challenges
 
