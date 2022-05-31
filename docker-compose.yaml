@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    image: node:12.18.4
+    working_dir: /code
+    volumes:
+      - type: bind
+        source: ./express-api
+        target: /code
+
+  db:
+    image: postgres:12.4
+    # environment: 
+    #   - POSTGRES_USER=futureproof
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - "./db/migrations:/docker-entrypoint-initdb.d/:ro"
