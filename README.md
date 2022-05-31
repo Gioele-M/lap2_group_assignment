@@ -1,5 +1,7 @@
 # LAP 2 - 24 Hour Challenge 
 
+Pair project done for [futureproof](https://www.getfutureproof.co.uk/)
+
 Inspired by [Telegraph](https://telegra.ph/)
 
 # Installation & Usage
@@ -8,27 +10,31 @@ Inspired by [Telegraph](https://telegra.ph/)
 
  - run `bash _scripts/startDev.sh` to start api & db services
 
-  - To start client, open `index.html` filr with your browser
 
-  - To access server, visit `localhost:3000`
+  - to access server and client, visit `localhost:3000` and `localhost:8080`
+
+## Homepage
+
+![image](assets/homepage.png)
 
 
+## Planning
+- [Figma](https://www.figma.com/)
+- [Excalidraw](https://excalidraw.com/)
+- [GitHub project](https://excalidraw.com/)
 
-
-
-
-## Planning stage
 ![image](assets/project_planning.png)
+
 
 ## Wins & Challenges
 
 ### Wins
 
-- Good planning  GItHub project
+- planning using GitHub project
 
 ### Challenges
 
-- ....
+- merge conflicts
 
 ## Contributors
 
@@ -38,7 +44,3 @@ Group challenge done by:
 - <a href="https://github.com/Gioele-M">Gioele Montis</a>
 - <a href="https://github.com/Igormirowski">Igor Mirowski</a>
 
-
-
-# remember :
-correct post.js if necessary
