@@ -69,8 +69,6 @@ allData.then(e=>{
 function createPost(data){
     const {title, name, body} = data
 
-    console.log(title, name, body)
-
     const main_section = document.createElement('section')
     main_section.className = 'post2'
     
@@ -90,8 +88,6 @@ function createPost(data){
     main_section.appendChild(title_section)
     main_section.appendChild(name_section)
     main_section.appendChild(body_section)
-
-    console.log(main_section)
 
     return main_section
 }
