@@ -22,6 +22,10 @@ Inspired by [Telegraph](https://telegra.ph/)
 
 ![image](assets/project_planning.png)
 
+## Homepage
+
+![image](assets/homepage.png)
+
 ## Wins & Challenges
 
 ### Wins
@@ -40,7 +44,3 @@ Group challenge done by:
 - <a href="https://github.com/Gioele-M">Gioele Montis</a>
 - <a href="https://github.com/Igormirowski">Igor Mirowski</a>
 
-
-
-# remember :
-correct post.js if necessary
