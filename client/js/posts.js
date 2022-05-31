@@ -1,16 +1,16 @@
-// Displaying a post
-async function loadPost(hash) {
-    document.getElementById('postTitle').textContent = "";
-    document.getElementById('postBody').textContent = "";
-    let postData = await getPost(hash);
-    console.log(postData);
-    if (postData.err) {
-        document.getElementById('postTitle').textContent = "Error post not found";
-    } else {
-        document.getElementById('postTitle').textContent = `${postData.date} > ${postData.name} > ${postData.title}`;
-        document.getElementById('postBody').textContent = postData.body;
-    }
-}
+// // Displaying a post
+// async function loadPost(hash) {
+//     document.getElementById('postTitle').textContent = "";
+//     document.getElementById('postBody').textContent = "";
+//     let postData = await getPost(hash);
+//     console.log(postData);
+//     if (postData.err) {
+//         document.getElementById('postTitle').textContent = "Error post not found";
+//     } else {
+//         document.getElementById('postTitle').textContent = `${postData.date} > ${postData.name} > ${postData.title}`;
+//         document.getElementById('postBody').textContent = postData.body;
+//     }
+// }
 
 
 
@@ -53,9 +53,13 @@ function loopAndAppend(data, parent_div){
 
 
 
-const parent = document.querySelector('#parent-div')
+// const parent = document.querySelector('#parent-div')
 
-const sample_posts = [{title: "sample title", name: "sample name", body: "sample body"}, {title: "sample title 2", name: "sample name2 ", body: "sample body2"},{title: "sample title3", name: "sample name3", body: "sample body3"}]
+// const sample_posts = [{title: "sample title", name: "sample name", body: "sample body"}, {title: "sample title 2", name: "sample name2 ", body: "sample body2"},{title: "sample title3", name: "sample name3", body: "sample body3"}]
 
 
-loopAndAppend(sample_posts,parent)
+// loopAndAppend(sample_posts,parent)
+
+
+
+// module.exports = {loopAndAppend}
