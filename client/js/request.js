@@ -1,49 +1,40 @@
-const form = document.querySelector('#new_post');
-const postsList = document.querySelector('table');  //THIS IS NEEDED
+// Request handling
+const form = document.querySelector('form');
+form.addEventListener('submit', handlePost);
 
-form.addEventListener('submit', submitPost);
+async function handlePost(e) {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target))
+  let currentDate = new Date();
+  currentDate = `${currentDate.getDate()} / ${currentDate.getMonth() + 1}`
+  try {
+    const options = {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...data, date: currentDate})
+    }
 
-// Fetch all posts as soon as app is loaded
-getAllPosts();   // THIS WAS MISSING
+    console.log(options.body);
 
+    const response = await fetch('http://localhost:3000/', options);
+    const { id, err } = await response.json();
+    console.log(id);
+    if (err) {
+      throw Error(err);
+    } else {
+      window.location.hash = `${id}`;
+    }
+  } catch (err) {
+    console.warn(err);
+  }
+}
 
-
-
-
-// POST FLOW
-// index
-function getAllPosts(){
-    fetch('http://localhost:3000/posts')
-        .then(r => r.json())
-        .then(appendPosts)
-        .catch(console.warn)
-};
-
-// create
-function submitPost(e){
-    e.preventDefault();
-
-    const postData = {
-        title: e.target.title.value,
-        name: e.target.name.value,
-        body: e.target.body.value
-    };
-
-    const options = { 
-        method: 'POST',
-        body: JSON.stringify(postData),
-        headers: { "Content-Type": "application/json" }
-    };
-
-    fetch('http://localhost:3000/posts', options)
-        .then(r => r.json())
-        .then(appendPost)
-        .then(() => e.target.reset())
-        .catch(console.warn)
-};
-
-
-
-
-
-
+async function getPost(id) {
+  try {
+    const response = await fetch(`http://localhost:3000/${id}`);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.warn(err);
+  }
+}
