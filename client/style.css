@@ -17,8 +17,7 @@ form{
  background-color: lightslategray;
  border-radius: 5px;
  padding: 30px;
-
-
+ margin-bottom: 15px;
 
 }
 
@@ -41,5 +40,32 @@ input[type=text], textarea {
 
 }
 
+/* STYLING post */
 
+#post2 {
+    background-color: lightgray;
+    width: 40%;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+  }
 
+  #postTitle {
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 8px;
+    color: azure;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+  
+  #postName {
+    color: black
+  }
+  
+  #postBody {
+    font-style: italic;
+    color: black;
+    padding-bottom: 10px;
+  }
+  
