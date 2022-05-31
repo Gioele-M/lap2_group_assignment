@@ -2,14 +2,11 @@
 
 # START
 
-
-
-
-
-
+### Run using
+bash _scripts/startDev.sh 
 
 
 
 
 # remember :
-remove index.js and server.js, correct post.js if necessary
+correct post.js if necessary
