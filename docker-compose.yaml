@@ -13,7 +13,7 @@ services:
     # environment: 
     #   - POSTGRES_USER=futureproof
     environment:
-      - POSTGRES_USER=user
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
     volumes:
       - "./db/migrations:/docker-entrypoint-initdb.d/:ro"
