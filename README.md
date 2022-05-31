@@ -21,9 +21,15 @@ Inspired by [Telegraph](https://telegra.ph/)
 ## Planning
 - [Figma](https://www.figma.com/)
 - [Excalidraw](https://excalidraw.com/)
-- [GitHub project](https://excalidraw.com/)
+- [GitHub project](https://github.com/)
 
+Excalidraw project planning
 ![image](assets/project_planning.png)
+
+
+
+GitHub project - Kanban board
+![image](assets/githubP.png)
 
 
 ## Wins & Challenges
